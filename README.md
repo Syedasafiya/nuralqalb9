@@ -1,4 +1,3 @@
-@"
 # Nuralqalb9
 
 A web app presenting **Asma ul Husna — the 99 Names of Allah** with their Arabic script, transliteration, meaning, in-depth explanation, Qur'anic reference, and a short reflection for each name.
