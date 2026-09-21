@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Asma ul Husna — The 99 Names of Allah</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Asma ul Husna</div>
+    <p class="bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+    <h1>The 99 Names of Allah</h1>
+    <p class="sub">Arabic script, transliteration and meaning. Click any name to open its full explanation, Qur'anic reference and reflection.</p>
+    <div class="rule"><span>۞</span></div>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="wrap controls-inner">
+    <div class="search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      <input type="search" id="q" placeholder="Search a name or meaning…" autocomplete="off">
+    </div>
+    <div class="count" id="count">Loading…</div>
+    <button class="tbtn" id="random" title="Random name" aria-label="Random name">✦</button>
+    <button class="tbtn" id="theme" title="Toggle theme" aria-label="Toggle theme">◐</button>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="grid" id="grid"></div>
+</main>
+
+<footer>
+  <div class="ar-f">وَلِلَّهِ الْأَسْمَاءُ الْحُسْنَىٰ فَادْعُوهُ بِهَا</div>
+  To Allah belong the most beautiful names, so call upon Him by them. — Surah Al-A'raf 7:180
+</footer>
+
+<div class="overlay" id="overlay">
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Name detail">
+    <button class="close" id="close" aria-label="Close">×</button>
+    <div id="m-body">
+      <div class="loader">Loading…</div>
+    </div>
+  </div>
+</div>
+
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
